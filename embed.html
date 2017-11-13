@@ -53,7 +53,7 @@
             width: 100%;
             height: 0;
             padding-top: 60%;
-            background-image: url('https://interactive.guim.co.uk/embed/2017/05/this-land-is-your-land/bg.jpg');
+            background-image: url('https://interactive.guim.co.uk/embed/2017/11/break-the-cycle/bg-test.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
@@ -109,7 +109,7 @@
             }
         }
 
-        .this-land-is-your-land__count {
+        .break-the-cycle__count {
             font-family: 'Guardian Egyptian Web';
             font-weight: 800;
             font-size: 18px;
@@ -118,14 +118,14 @@
             display: block;
         }
 
-        .this-land-is-your-land__count-label {
+        .break-the-cycle__count-label {
             font-family: 'Guardian Text Egyptian Web';
             font-size: 14px;
             line-height: 1.4;
             display: block;
         }
 
-        .this-land-is-your-land__progress {
+        .break-the-cycle__progress {
             width: 100%;
             height: 10px;
             border-radius: 5px;
@@ -135,7 +135,7 @@
             margin-top: 6px;
         }
 
-        .this-land-is-your-land__filled-progress {
+        .break-the-cycle__filled-progress {
             background-color: #fb0;
             position: absolute;
             top: 0;
@@ -146,13 +146,13 @@
             transition: transform 3s cubic-bezier(0.25, 0.55, 0.2, 0.85);
         }
 
-        .this-land-is-your-land__progress-labels {
+        .break-the-cycle__progress-labels {
             position: relative;
             width: 100%;
             height: 16px;
         }
 
-        .this-land-is-your-land__label {
+        .break-the-cycle__label {
             font-family: 'Guardian Text Sans Web';
             font-size: 14px;
             color: #676767;
@@ -160,7 +160,7 @@
             top: 5px;
         }
 
-        .this-land-is-your-land__label--goal {
+        .break-the-cycle__label--goal {
             right: 0;
         }
 
@@ -193,15 +193,15 @@
         </div>
         <div class='image'></div>
         <div class="content">
-            <div class='this-land-is-your-land__goal'>
-                <span class='this-land-is-your-land__count'>$0</span>
-                <span class='this-land-is-your-land__count-label'>total so far</span>
-                <div class='this-land-is-your-land__progress'>
-                    <div class='this-land-is-your-land__filled-progress'></div>
+            <div class='break-the-cycle__goal'>
+                <span class='break-the-cycle__count'>$0</span>
+                <span class='break-the-cycle__count-label'>pledged so far</span>
+                <div class='break-the-cycle__progress'>
+                    <div class='break-the-cycle__filled-progress'></div>
                 </div>
-                <div class='this-land-is-your-land__progress-labels'>
-                    <span class='this-land-is-your-land__label this-land-is-your-land__label--first'>$0</span>
-                    <span class='this-land-is-your-land__label this-land-is-your-land__label--goal'></span>
+                <div class='break-the-cycle__progress-labels'>
+                    <span class='break-the-cycle__label break-the-cycle__label--first'>$0</span>
+                    <span class='break-the-cycle__label break-the-cycle__label--goal'></span>
                 </div>
             </div>
 
@@ -258,7 +258,7 @@ theguardian.com/us-news/series/break-the-cycle' target='_parent'>Break the Cycle
         }
 
         function populateText() {
-            document.getElementsByClassName('this-land-is-your-land__label--goal')[0].innerHTML = '$' + toK(goal) + ' goal';
+            document.getElementsByClassName('break-the-cycle__label--goal')[0].innerHTML = '$' + toK(goal) + ' goal';
         }
 
         function toK(val) {
@@ -273,16 +273,16 @@ theguardian.com/us-news/series/break-the-cycle' target='_parent'>Break the Cycle
 
         function increaseCounter() {
             count += Math.floor(total / 100);
-            document.getElementsByClassName('this-land-is-your-land__count')[0].innerHTML = "$" + count.toLocaleString();
+            document.getElementsByClassName('break-the-cycle__count')[0].innerHTML = "$" + count.toLocaleString();
 
             if (count >= total) {
                 clearInterval(interval);
-                document.getElementsByClassName('this-land-is-your-land__count')[0].innerHTML = "$" + total.toLocaleString();
+                document.getElementsByClassName('break-the-cycle__count')[0].innerHTML = "$" + total.toLocaleString();
             }
         }
 
         function animateBar() {
-            document.getElementsByClassName('this-land-is-your-land__filled-progress')[0].style.transform = 'translateX(' + percentageTotalAsNegative() + '%)';
+            document.getElementsByClassName('break-the-cycle__filled-progress')[0].style.transform = 'translateX(' + percentageTotalAsNegative() + '%)';
         }
 
         function percentageTotalAsNegative() {

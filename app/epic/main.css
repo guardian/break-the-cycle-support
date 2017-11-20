@@ -1,0 +1,54 @@
+.contributions-epic-gun-campaign {
+    border-top: 1px solid #ffbb00;
+    background: #efefec;
+    width: 100%;
+    font-family: "Guardian Text Egyptian Web", Georgia, serif;
+    clear: left;
+}
+
+.contributions-epic-gun-campaign_header-wrapper {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Guardian Egyptian Web", "Guardian Text Egyptian Web", Georgia, serif;
+    background-color: #fb0;
+    border-top: 2px solid #333;
+    color: #333;
+    padding: 0px 6px 6px 6px;
+}
+
+.contributions-epic-gun-campaign_button {
+    display: inline-block;
+    color: #333333 !important;
+    background: #ffbb00;
+    width: 200px;
+    border-radius: 100px;
+    margin: 0 15px 15px 0;
+    padding: 7px 14px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: "Guardian Text Sans Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.contribution-epic_button-arrow {
+    float: right;
+}
+
+.contributions-epic-gun-campaign_highlight {
+    background: rgba(255, 187, 0, 0.6);
+    padding: 4px 0;
+}
+.contributions-epic-gun-campaign_image {
+    background-image: url("https://interactive.guim.co.uk/embed/2017/11/break-the-cycle/bg-test.jpg");
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 3px;
+}
+
+.contributions-epic-gun-campaign_copy {
+    padding: 6px 10px;
+}
